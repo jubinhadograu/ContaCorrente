@@ -33,11 +33,11 @@ namespace ContaCorrente
         // Sacar valores dos corretistas
         public void Sacar(double valor)
         {
-            if (valor <= Saldo)
-                Saldo -= valor;
+            if (valor <= this.Saldo)
+                this.Saldo -= valor;
             else
-                Console.WriteLine("Saque negado. Saldo insuficiente.");
-            this.Saldo -= Saldo; //o mesmo so que subtraindo
+                System.Windows.Forms.MessageBox.Show("Saque negado. Saldo insuficiente.");
+                
         }
 
         //g. transferir o valor de R$100,oo do correntista 1 para o correntista 2;
